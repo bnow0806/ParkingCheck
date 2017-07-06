@@ -35,9 +35,5 @@ double lng=126.986;
         marker.position(new LatLng(lat, lng));
         googleMap.addMarker(marker).showInfoWindow();
 
-        Uri uri=Uri.parse("geo:"+lat+","+lng);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-
     }
 }
